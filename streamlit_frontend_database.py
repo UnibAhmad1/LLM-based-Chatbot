@@ -51,7 +51,7 @@ if 'chat_threads' not in st.session_state:
 add_thread(st.session_state['thread_id'])
     
 # ******************************** Side bar UI **************************************************
-st.sidebar.title('LangGraph Chatbot')
+st.sidebar.title('Generative AI ChatBot')
 
 if st.sidebar.button('New Conversation'):
     reset_chat()
@@ -95,6 +95,18 @@ for thread_id in st.session_state['chat_threads'][::-1]:
         
 # *************************************** Main UI *************************************************   
 
+st.info("""
+Welcome to my Generative AI Chatbot!
+
+This project is powered by the free Gemini 2.5 Flash model and is intended for learning and demonstration purposes.
+
+• Responses may be slower than commercial AI assistants.
+• Very long prompts or frequent requests may temporarily exceed the free API limits.
+• If API limits are reached, the chatbot may become unavailable until the quota resets.
+• For a better experience, try asking concise questions.
+
+Thank you for trying it out! 
+""") 
 user_input  = st.chat_input('Type Here!')
 
 CONFIG = {'configurable': {'thread_id': st.session_state['thread_id']}}
