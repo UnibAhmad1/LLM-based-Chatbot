@@ -29,3 +29,7 @@ streamlit
 grandalf
 requests
 ddgs
+
+langgraph
+langgraph-checkpoint
+langgraph-checkpoint-sqlite
