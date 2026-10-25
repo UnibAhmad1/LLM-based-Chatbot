@@ -92,7 +92,7 @@ def chat_node(state: ChatState):
     - Never show raw tool output.
 
     STYLE:
-    - Give me details answer
+    - Max 20 words.
     """
     )
     
@@ -152,3 +152,4 @@ def delete_thread(thread_id):
     
 
     
+
