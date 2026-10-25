@@ -92,7 +92,7 @@ def chat_node(state: ChatState):
     - Never show raw tool output.
 
     STYLE:
-    - Max 20 words.
+    - Give me details answer
     """
     )
     
@@ -150,4 +150,5 @@ def delete_thread(thread_id):
     
     connection.commit()   # save changes to database
     
+
     
